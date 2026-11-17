@@ -1,0 +1,15 @@
+{
+ "tema": "Saci (estilo lagartixa, humor ousado)",
+ "versao": 2,
+ "voice_eleven": "nPczCjzI2devNBz1zQrb",
+ "model_eleven": "eleven_multilingual_v2",
+ "gap": 0.5,
+ "segments": [
+  {"id": "c1", "tag": "ABERTURA", "text": "Olha esse saci. Duas pernas. Saci só tem uma. Então o que é essa segunda aí? Senta que eu explico."},
+  {"id": "c2", "tag": "VIRADA", "text": "Isso não é perna. É a chibata dele. Grossa, cheia de veia, enfiada no tênis pra ninguém ver. Mas você viu, né, safado?"},
+  {"id": "c3", "tag": "NOME", "text": "Pererê vem do tupi e quer dizer \"ir aos saltos\". O arrombado pula o dia inteiro numa perna só, carregando isso. Esse é o estepe dele."},
+  {"id": "c4", "tag": "CARAPUCA", "text": "A carapuça vermelha veio de Portugal, do trasgo de Trás-os-Montes, um duende que também usava gorro vermelho. É ela que dá os poderes. Essa é a bateria dele."},
+  {"id": "c5", "tag": "TRAVESSURAS", "text": "Ele trança o pelo dos animais, põe sal no açúcar e queima o feijão da cozinheira. Assobia e ninguém descobre de onde vem. E viaja de redemoinho. Esse é o Uber dele."},
+  {"id": "c6", "tag": "FECHO", "text": "Resumindo: uma perna, uma carapuça e uma chibata. Mas cuidado, o saci é danado. Se vacilar, ele passa a segunda perna dele em você."}
+ ]
+}

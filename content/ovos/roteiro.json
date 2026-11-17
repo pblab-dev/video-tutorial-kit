@@ -1,0 +1,34 @@
+{
+ "tema": "Os ovos do seu amigo (3D animado, tabuleiro cartoon)",
+ "versao": 1,
+ "voice_eleven": "nPczCjzI2devNBz1zQrb",
+ "model_eleven": "eleven_multilingual_v2",
+ "gap": 0.5,
+ "segments": [
+  {
+   "id": "c1",
+   "tag": "GANCHO",
+   "text": "Seu amigo tem dois ovos. E você, com QI negativo, já quer apertar um. Calma, gênio. Péssima ideia."
+  },
+  {
+   "id": "c2",
+   "tag": "CASCA",
+   "text": "A casca parece frágil, mas é engenharia pesada: noventa e cinco por cento carbonato de cálcio, o mesmo material do mármore, amarrado por proteínas. Tem poros pro ovo respirar e protege contra batida e bactéria. A galinha leva vinte horas pra fazer. Você leva dois segundos pra estragar."
+  },
+  {
+   "id": "c3",
+   "tag": "ESPERAR",
+   "text": "O mais inteligente é esperar. Vinte e um dias depois, o pinto do seu amigo nasce. Nesse tempo, ele dissolve a casca por dentro e usa o cálcio pro próprio esqueleto. Come a própria casa. E sai com um dentinho temporário no bico, o dente de ovo."
+  },
+  {
+   "id": "c4",
+   "tag": "PINTO",
+   "text": "Agora o pinto do seu amigo tá pra fora. E você já quer mexer nele. Só que um pintinho recém-nascido pesa uns trinta e sete gramas. Você pesa quase duas mil vezes mais. Se sentar nele sem querer, machuca."
+  },
+  {
+   "id": "c5",
+   "tag": "GALINHEIRO",
+   "text": "O certo é guardar o pinto do seu amigo num galinheiro pequeno, quentinho, com ração e água. Lá ele vive feliz. Você continua com QI negativo. Mas, hoje, ninguém foi esmagado."
+  }
+ ]
+}

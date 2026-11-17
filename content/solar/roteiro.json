@@ -1,0 +1,17 @@
+{
+  "tema": "Energia solar: on-grid x off-grid e qual indicar",
+  "versao": 1,
+  "voice_eleven": "nPczCjzI2devNBz1zQrb",
+  "model_eleven": "eleven_multilingual_v2",
+  "voice": "pt-BR-AntonioNeural",
+  "rate": "+12%",
+  "gap": 0.35,
+  "segments": [
+    {"id": "gancho", "tag": "GANCHO", "text": "Energia solar: on-grid ou off-grid? Cada um serve a uma situação. E tudo começa numa pergunta: tem rede por perto?"},
+    {"id": "on", "tag": "ON-GRID", "text": "Mas… no on-grid você usa o sol de dia, e o que sobra vira crédito na conta. Então à noite você puxa da rede. Painel, inversor e distribuidora. Esse é o on-grid."},
+    {"id": "off", "tag": "OFF-GRID", "text": "Já o off-grid não tem rede. Então o sol carrega a bateria, e a bateria acende a casa à noite. Painel, controlador, bateria e inversor. Esse é o off-grid."},
+    {"id": "apagao", "tag": "APAGÃO", "text": "Agora o erro mais comum. Acaba a luz na cidade. O on-grid desliga junto, por segurança. O off-grid segue ligado."},
+    {"id": "custo", "tag": "CUSTO", "text": "Mas off-grid não é de graça. A bateria é a parte cara, e precisa aguentar dias nublados. Dimensionar errado é o erro que mais custa."},
+    {"id": "fecho", "tag": "FECHO", "text": "Então, qual é o melhor para você? Tem rede por perto? Casa ou comércio na cidade: on-grid. Sítio sem rede: off-grid. E se quiser segurança no apagão: híbrido."}
+  ]
+}

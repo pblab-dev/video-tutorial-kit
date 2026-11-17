@@ -1,0 +1,40 @@
+{
+  "tema": "SEO, AEO e GEO: as diferenças",
+  "versao": 2,
+  "voice_eleven": "nPczCjzI2devNBz1zQrb",
+  "model_eleven": "eleven_multilingual_v2",
+  "voice": "pt-BR-AntonioNeural",
+  "rate": "+12%",
+  "gap": 0.35,
+  "segments": [
+    {
+      "id": "gancho",
+      "tag": "GANCHO",
+      "text": "Seu site está no Google. E mesmo assim, a IA nunca fala de você. Por quê? Porque existem três jogos diferentes. E você precisa jogar os três."
+    },
+    {
+      "id": "seo",
+      "tag": "SEO",
+      "text": "Primeiro, o Google te mostra uma lista. Então você escala o ranking com palavra-chave, links e um site rápido. Esse é o SEO: Search Engine Optimization, otimização para mecanismos de busca.",
+      "say": { "SEO:": "Éss-Íi-Ôu:" }
+    },
+    {
+      "id": "aeo",
+      "tag": "AEO",
+      "text": "Mas ninguém quer lista, quer a resposta. Então você escreve a resposta curta e direta, logo no topo da página. Esse é o AEO: Answer Engine Optimization, otimização para motores de resposta.",
+      "say": { "AEO:": "Êi-Íi-Ôu:" }
+    },
+    {
+      "id": "geo",
+      "tag": "GEO",
+      "text": "Só que agora a IA mistura várias fontes e cita só algumas. Então você vira a fonte que ela escolhe: dados, autoridade e marca clara. Esse é o GEO: Generative Engine Optimization, otimização para motores generativos.",
+      "say": { "GEO:": "Djí-Íi-Ôu:" }
+    },
+    {
+      "id": "fecho",
+      "tag": "FECHO",
+      "text": "SEO te coloca na lista. AEO te dá a resposta. GEO faz a IA te citar. Os três se somam.",
+      "say": { "SEO": "Éss-Íi-Ôu", "AEO": "Êi-Íi-Ôu", "GEO": "Djí-Íi-Ôu" }
+    }
+  ]
+}

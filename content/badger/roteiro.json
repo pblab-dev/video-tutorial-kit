@@ -1,0 +1,44 @@
+{
+ "tema": "Texugo-do-mel (estilo lagartixa, humor ousado)",
+ "versao": 3,
+ "voice_eleven": "nPczCjzI2devNBz1zQrb",
+ "model_eleven": "eleven_multilingual_v2",
+ "gap": 0.5,
+ "segments": [
+  {
+   "id": "c1",
+   "tag": "GANCHO",
+   "text": "Seu cunhado é um texugo-do-mel. E tá pouco se fudendo."
+  },
+  {
+   "id": "c2",
+   "tag": "PELE",
+   "text": "Pegou ele pelo cangote? O arrombado tem a pele tão solta que vira lá dentro e te morde. Ferroada, espinho e dente quase nunca atravessam. Esse é o moletom largão dele."
+  },
+  {
+   "id": "c3",
+   "tag": "ABELHAS",
+   "text": "Agora olha a colmeia. O filho da puta invade, come mel e larva, e nem liga pras abelhas. Ainda solta um fedor que pode acalmar elas. Esse é o fumacê dele."
+  },
+  {
+   "id": "c4",
+   "tag": "COBRA",
+   "text": "Cobra? Pra ele é tira-gosto. Já foi visto molestando uma cobra, até mamba-negra. O veneno que paralisa não encaixa no corpo dele. Essa é a fechadura trocada dele."
+  },
+  {
+   "id": "c5",
+   "tag": "CAVAR",
+   "text": "Chão duro? Que se foda. Ele abre um túnel em dez minutos, com garras compridas na frente. Essa é a retroescavadeira dele."
+  },
+  {
+   "id": "c6",
+   "tag": "STOFFEL",
+   "text": "Em dois mil e quatorze, na África do Sul, um texugo chamado Stoffel fugiu do cercado várias vezes pra encarar os leões do vizinho. Foi filmado pela BBC. O maluco montou uma rampa pra passar o muro. Esse é o puxadinho dele."
+  },
+  {
+   "id": "c7",
+   "tag": "FECHO",
+   "text": "Chamam de teimoso quem nunca desiste. Mas seu cunhado leva ferroada, molesta cobra e passa por cima do muro, com no máximo dezesseis quilos. Seu cunhado é um texugo-do-mel. E tá pouco se fudendo pra tudo."
+  }
+ ]
+}

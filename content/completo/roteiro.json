@@ -1,0 +1,20 @@
+{
+  "voice": "pt-BR-AntonioNeural",
+  "rate": "+12%",
+  "gap": 0.3,
+  "segments": [
+    {"id": "s02", "tag": "RAG", "text": "Mas ela não conhece os seus documentos. Então você busca os trechos certos e manda junto. Esse é o RAG.", "say": {"RAG": "rague"}},
+    {"id": "s03", "tag": "EMBEDDINGS", "text": "Mas como achar o trecho certo? Então você transforma texto em números que representam o significado. Esses são os embeddings.", "say": {"embeddings.": "embédins."}},
+    {"id": "s04", "tag": "BANCO VETORIAL", "text": "Mas comparar milhões de vetores é lento. Então você guarda tudo num banco feito para isso. Esse é o banco vetorial.", "say": {}},
+    {"id": "s05", "tag": "TOOL CALLING", "text": "Mas ela só fala, não faz nada. Então você deixa ela chamar as suas funções. Esse é o tool calling.", "say": {"tool": "tul", "calling.": "cólin."}},
+    {"id": "s06", "tag": "AGENTE", "text": "Mas uma chamada só não resolve tudo. Então você coloca num loop: pensa, age, observa. Esse é o agente.", "say": {"loop:": "lúpi:"}},
+    {"id": "s07", "tag": "STRUCTURED OUTPUT", "text": "Mas a resposta vem em texto solto. Então você exige um JSON no formato certo. Esse é o structured output.", "say": {"JSON": "jeison", "structured": "estrákchurd", "output.": "áutput."}},
+    {"id": "s08", "tag": "STREAMING", "text": "Mas o usuário fica dez segundos olhando pra tela. Então você manda a resposta token por token. Esse é o streaming.", "say": {"token": "tôuquen", "streaming.": "estrímin."}},
+    {"id": "s09", "tag": "GUARDRAILS", "text": "Mas ela pode vazar dados ou responder o que não deve. Então você filtra a entrada e a saída. Esses são os guardrails.", "say": {"guardrails.": "gárdreiuz."}},
+    {"id": "s10", "tag": "PROMPT CACHE", "text": "Mas o mesmo prompt gigante é cobrado toda vez. Então você reaproveita o prefixo em cache. Esse é o prompt cache.", "say": {"prompt": "prômpt", "cache": "quéche", "cache.": "quéche."}},
+    {"id": "s11", "tag": "FALLBACK", "text": "Mas o provedor cai. Então você troca para outro modelo automaticamente. Esse é o fallback.", "say": {"fallback.": "fólbéqui."}},
+    {"id": "s12", "tag": "EVALS", "text": "Mas como saber se mudar o prompt melhorou? Então você testa com casos reais e mede. Esses são os evals.", "say": {"evals.": "ivóuz.", "prompt": "prômpt"}},
+    {"id": "s13", "tag": "OBSERVABILIDADE", "text": "Mas quando dá erro, você não sabe o porquê. Então você registra cada chamada, custo e tempo. Essa é a observabilidade.", "say": {}},
+    {"id": "fecho", "tag": "", "text": "Parabéns! Agora você tem um agente de IA integrado no seu app. Siga o canal para mais tutoriais.", "say": {}}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "_nota": "Glossário de pronúncia APROVADO pelo Idiel. 'voz' = grafia fonética enviada ao TTS; a legenda sempre mantém 'texto'. Termos novos ficam em 'pendentes' até o Idiel ouvir e aprovar.",
+  "aprovados": {
+    "SEO": {
+      "voz": "Éss-Íi-Ôu",
+      "aprovado_em": "2026-11-13",
+      "variante": "B"
+    },
+    "AEO": {
+      "voz": "Êi-Íi-Ôu",
+      "aprovado_em": "2026-11-13",
+      "variante": "B"
+    },
+    "GEO": {
+      "voz": "Djí-Íi-Ôu",
+      "aprovado_em": "2026-11-13",
+      "variante": "B"
+    }
+  },
+  "pendentes": {},
+  "expansoes": {
+    "SEO": {
+      "voz": "Search Engine Optimization",
+      "pt": "otimização para mecanismos de busca"
+    },
+    "AEO": {
+      "voz": "Answer Engine Optimization",
+      "pt": "otimização para motores de resposta"
+    },
+    "GEO": {
+      "voz": "Generative Engine Optimization",
+      "pt": "otimização para motores generativos"
+    },
+    "_variante": "A (inglês natural), aprovada 2026-11-13; 1ª citação de cada sigla diz a expansão, depois só a sigla (soletrada em PT, variante B)"
+  }
+}

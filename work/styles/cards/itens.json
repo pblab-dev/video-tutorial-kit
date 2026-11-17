@@ -1,0 +1,226 @@
+{
+ "pop": [
+  {
+   "id": 1,
+   "src": "work/styles/cards/01.jpg",
+   "name": "1 · 3D Animado",
+   "sub": "mundo de argila / low-poly, colorido",
+   "speed": "Médio",
+   "tone": "warning",
+   "btn": "Escolher o 1",
+   "send": "Quero o estilo 1 – 3D Animado"
+  },
+  {
+   "id": 2,
+   "src": "work/styles/cards/02.jpg",
+   "name": "2 · 3D Profissional",
+   "sub": "realista, cara de cinema",
+   "speed": "Mais lento",
+   "tone": "danger",
+   "btn": "Escolher o 2",
+   "send": "Quero o estilo 2 – 3D Profissional"
+  },
+  {
+   "id": 3,
+   "src": "work/styles/cards/03.jpg",
+   "name": "3 · Quadro Branco",
+   "sub": "desenhado na hora",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 3",
+   "send": "Quero o estilo 3 – Quadro Branco"
+  },
+  {
+   "id": 4,
+   "src": "work/styles/cards/04.jpg",
+   "name": "4 · Dados em Movimento",
+   "sub": "gráficos que contam história",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 4",
+   "send": "Quero o estilo 4 – Dados em Movimento"
+  },
+  {
+   "id": 5,
+   "src": "work/styles/cards/05.jpg",
+   "name": "5 · Terminal e Código",
+   "sub": "telas de programador",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 5",
+   "send": "Quero o estilo 5 – Terminal e Código"
+  },
+  {
+   "id": 6,
+   "src": "work/styles/cards/06.jpg",
+   "name": "6 · Pixel Art 8 bits",
+   "sub": "jogo retrô",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 6",
+   "send": "Quero o estilo 6 – Pixel Art 8 bits"
+  }
+ ],
+ "out": [
+  {
+   "id": 7,
+   "src": "work/styles/cards/07.jpg",
+   "name": "7 · Recorte de papel",
+   "sub": "artesanal, quentinho",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 7",
+   "send": "Quero o estilo 7 – Recorte de papel"
+  },
+  {
+   "id": 8,
+   "src": "work/styles/cards/08.jpg",
+   "name": "8 · Bonequinhos de traço",
+   "sub": "figuras de tinta em ação",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 8",
+   "send": "Quero o estilo 8 – Bonequinhos de traço"
+  },
+  {
+   "id": 9,
+   "src": "work/styles/cards/09.jpg",
+   "name": "9 · Partículas brilhantes",
+   "sub": "tecnologia cinematográfica",
+   "speed": "Mais lento",
+   "tone": "danger",
+   "btn": "Escolher o 9",
+   "send": "Quero o estilo 9 – Partículas brilhantes"
+  },
+  {
+   "id": 10,
+   "src": "work/styles/cards/10.jpg",
+   "name": "10 · Colagem documental",
+   "sub": "estilo reportagem",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 10",
+   "send": "Quero o estilo 10 – Colagem documental"
+  },
+  {
+   "id": 11,
+   "src": "work/styles/cards/11.jpg",
+   "name": "11 · Tipografia animada",
+   "sub": "o texto é a imagem",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 11",
+   "send": "Quero o estilo 11 – Tipografia animada"
+  },
+  {
+   "id": 12,
+   "src": "work/styles/cards/12.jpg",
+   "name": "12 · Jornada no mapa",
+   "sub": "rotas e lugares",
+   "speed": "Médio",
+   "tone": "warning",
+   "btn": "Escolher o 12",
+   "send": "Quero o estilo 12 – Jornada no mapa"
+  },
+  {
+   "id": 13,
+   "src": "work/styles/cards/13.jpg",
+   "name": "13 · Argila 3D suave",
+   "sub": "cara de brinquedo",
+   "speed": "Médio",
+   "tone": "warning",
+   "btn": "Escolher o 13",
+   "send": "Quero o estilo 13 – Argila 3D suave"
+  },
+  {
+   "id": 14,
+   "src": "work/styles/cards/14.jpg",
+   "name": "14 · Vidro líquido",
+   "sub": "premium, para apps",
+   "speed": "Mais lento",
+   "tone": "danger",
+   "btn": "Escolher o 14",
+   "send": "Quero o estilo 14 – Vidro líquido"
+  },
+  {
+   "id": 15,
+   "src": "work/styles/cards/15.jpg",
+   "name": "15 · Linhas isométricas",
+   "sub": "desenho técnico",
+   "speed": "Médio",
+   "tone": "warning",
+   "btn": "Escolher o 15",
+   "send": "Quero o estilo 15 – Linhas isométricas"
+  },
+  {
+   "id": 16,
+   "src": "work/styles/cards/16.jpg",
+   "name": "16 · Quadrinhos",
+   "sub": "painéis e balões",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 16",
+   "send": "Quero o estilo 16 – Quadrinhos"
+  },
+  {
+   "id": 17,
+   "src": "work/styles/cards/17.jpg",
+   "name": "17 · Vetor plano",
+   "sub": "2D limpo de estúdio",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 17",
+   "send": "Quero o estilo 17 – Vetor plano"
+  },
+  {
+   "id": 18,
+   "src": "work/styles/cards/18.jpg",
+   "name": "18 · TV retrô",
+   "sub": "anos 80/90",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 18",
+   "send": "Quero o estilo 18 – TV retrô"
+  },
+  {
+   "id": 19,
+   "src": "work/styles/cards/19.jpg",
+   "name": "19 · Matemática e fórmulas",
+   "sub": "estilo 3Blue1Brown",
+   "speed": "Médio",
+   "tone": "warning",
+   "btn": "Escolher o 19",
+   "send": "Quero o estilo 19 – Matemática e fórmulas"
+  },
+  {
+   "id": 20,
+   "src": "work/styles/cards/20.jpg",
+   "name": "20 · Risografia",
+   "sub": "pôster de tinta",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 20",
+   "send": "Quero o estilo 20 – Risografia"
+  },
+  {
+   "id": 21,
+   "src": "work/styles/cards/21.jpg",
+   "name": "21 · Grade suíça",
+   "sub": "formas geométricas",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 21",
+   "send": "Quero o estilo 21 – Grade suíça"
+  },
+  {
+   "id": 22,
+   "src": "work/styles/cards/22.jpg",
+   "name": "22 · Silhuetas",
+   "sub": "teatro de sombras",
+   "speed": "Rápido",
+   "tone": "success",
+   "btn": "Escolher o 22",
+   "send": "Quero o estilo 22 – Silhuetas"
+  }
+ ]
+}
