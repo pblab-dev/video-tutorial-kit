@@ -6,7 +6,9 @@ Uso:
 
 Variáveis de ambiente:
   GEMINI_API_KEY          chave (ou GOOGLE_TTS_KEY)
-  GOOGLE_GEMINI_BASE_URL  endereço base da API (ex.: .../v1beta). Obrigatória.
+  GOOGLE_GEMINI_BASE_URL  endereço base do GATEWAY da plataforma. Obrigatória. Nunca usar o endereço
+                          do Google direto: a chave só funciona pelo gateway. O script acrescenta
+                          /v1beta sozinho se faltar.
 
 roteiro.json: {"voice": "Algenib", "model": "gemini-3.8-flash-tts", "style": "tom debochado, natural",
                "gap": 0.5, "segments": [{"id": "c1", "tag": "GANCHO", "text": "...", "say": {"QI": "quê-i"}}]}
@@ -25,6 +27,10 @@ KEY = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_TTS_KEY')
 BASE = (os.environ.get('GOOGLE_GEMINI_BASE_URL') or '').rstrip('/')
 if not KEY or not BASE:
     sys.exit('Faltam GEMINI_API_KEY e/ou GOOGLE_GEMINI_BASE_URL no ambiente.')
+if not BASE.endswith('/v1beta'):
+    BASE += '/v1beta'
+# O gateway fica atrás do Cloudflare, que recusa o User-Agent padrão do Python (erro 1010).
+UA = 'minitask-bot/1.0'
 
 TMP = os.environ.get('TTS_TMP', '/tmp/tts_gemini')
 os.makedirs(TMP, exist_ok=True)
@@ -40,9 +46,7 @@ def synth_wav(text, voice, model, style, path):
             'generationConfig': {'responseModalities': ['AUDIO'],
                                  'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': voice}}}}}
     url = f'{BASE}/models/{model}:generateContent'
-    headers = {'Content-Type': 'application/json', 'x-goog-api-key': KEY}
-    if os.environ.get('GEMINI_AUTH') == 'bearer':
-        headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + KEY}
+    headers = {'Content-Type': 'application/json', 'x-goog-api-key': KEY, 'User-Agent': UA}
     last = None
     for tent in range(3):
         try:
@@ -55,7 +59,7 @@ def synth_wav(text, voice, model, style, path):
                 w.writeframes(base64.b64decode(data))
             return
         except urllib.error.HTTPError as e:
-            last = f'{e.code} {e.read().decode()[:300]}'
+            last = f'HTTP {e.code} {e.read().decode(errors="replace")[:300]}'
             if e.code in (429, 500, 503):
                 time.sleep(4 * (tent + 1)); continue
             break
