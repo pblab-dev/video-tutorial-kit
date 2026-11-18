@@ -68,12 +68,23 @@ def synth_wav(text, voice, model, style, path):
             time.sleep(2)
     sys.exit(f'Falha ao gerar voz: {last}')
 
-def to_mp3(wav, mp3):
-    # corta silêncio no começo e no fim para a sincronia ficar justa
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', wav, '-af',
-                    'silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,'
-                    'areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,areverse',
-                    '-ar', '44100', '-ac', '1', '-q:a', '3', mp3], check=True)
+def to_mp3(wav, out):
+    """Limpa a cena (sem estalos nas emendas). Se out terminar em .wav, mantém PCM sem perdas.
+    - highpass 40 Hz: remove o nível DC da voz (era ele que fazia o "clique" ao emendar com silêncio)
+    - corta silêncio das pontas com limiar suave e mantém 60 ms de respiro
+    - fade de entrada (15 ms) e de saída (60 ms): a cena começa e termina em zero
+    - limitador: evita estouro (clipping) de pico"""
+    af = ('highpass=f=40,'
+          'silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.06,'
+          'areverse,silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.06,areverse,'
+          'afade=t=in:d=0.015,areverse,afade=t=in:d=0.06,areverse,'
+          'alimiter=limit=0.89:level=0')
+    cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-i', wav, '-af', af, '-ar', '44100', '-ac', '1']
+    if out.endswith('.wav'):
+        cmd += ['-c:a', 'pcm_s16le']
+    else:
+        cmd += ['-q:a', '2']
+    subprocess.run(cmd + [out], check=True)
 
 def sw(t, say):
     if t in say:
@@ -127,7 +138,7 @@ for seg in cfg['segments']:
     toks = seg['text'].split()
     say = seg.get('say', {})
     spoken = ' '.join(sw(t, say) for t in toks)
-    wav, mp3 = f"{TMP}/{seg['id']}.wav", f"{TMP}/{seg['id']}.mp3"
+    wav, mp3 = f"{TMP}/{seg['id']}_raw.wav", f"{TMP}/{seg['id']}.wav"
     # às vezes o modelo lê as instruções em voz alta (cena fica longa demais): refaz até 4 vezes
     best = None
     for tent in range(4):
@@ -136,7 +147,7 @@ for seg in cfg['segments']:
         d = dur(mp3)
         ritmo = len(spoken) / d
         if best is None or d < best[0]:
-            best = (d, f'{TMP}/{seg["id"]}_best.mp3')
+            best = (d, f'{TMP}/{seg["id"]}_best.wav')
             subprocess.run(['cp', mp3, best[1]], check=True)
         if ritmo >= 9:
             break
@@ -146,9 +157,9 @@ for seg in cfg['segments']:
     parts.append((mp3, estimate_words(toks, d), d, seg))
     print(seg['id'], round(d, 2), 's', len(spoken), 'chars')
 
-sil = f'{TMP}/sil.mp3'
+sil = f'{TMP}/sil.wav'
 subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=mono',
-                '-t', str(gap), '-q:a', '9', sil], check=True)
+                '-t', str(gap), '-c:a', 'pcm_s16le', '-ar', '44100', sil], check=True)
 t0, tl = 0.0, []
 with open(f'{TMP}/list.txt', 'w') as f:
     for p, w, d, seg in parts:
@@ -158,6 +169,6 @@ with open(f'{TMP}/list.txt', 'w') as f:
         t0 += d + gap
 os.makedirs(os.path.dirname(out_mp3) or '.', exist_ok=True)
 subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', f'{TMP}/list.txt',
-                '-ar', '44100', '-ac', '1', '-q:a', '3', out_mp3], check=True)
+                '-ar', '44100', '-ac', '1', '-q:a', '2', out_mp3], check=True)
 json.dump({'duration': dur(out_mp3), 'segments': tl}, open(out_json, 'w'), ensure_ascii=False, indent=1)
 print('total', round(dur(out_mp3), 2), 's')
